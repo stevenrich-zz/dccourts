@@ -19,10 +19,10 @@ for a in alph1:
   for b in alph2:
     for c in alph3:
       driver = webdriver.Firefox()
-  		driver.get("https://www.dccourts.gov/cco/maincase.jsf")
-  		element = driver.find_element_by_name("appData:searchform:jspsearchpage:lastName")
-  		element.send_keys(str(a) + str(b))
-  		element2 = driver.find_element_by_name("appData:searchform:jspsearchpage:firstName")
-  		element2.send_keys(str(c))
-  		driver.find_element_by_name("appData:searchform:jspsearchpage:submitSearch").click()
-  		page = driver.page_source
+      driver.get("https://www.dccourts.gov/cco/maincase.jsf")
+      element = driver.find_element_by_name("appData:searchform:jspsearchpage:lastName")
+      element.send_keys(str(a) + str(b))
+      element2 = driver.find_element_by_name("appData:searchform:jspsearchpage:firstName")
+      element2.send_keys(str(c))
+      driver.find_element_by_name("appData:searchform:jspsearchpage:submitSearch").click()
+      page = driver.page_source
