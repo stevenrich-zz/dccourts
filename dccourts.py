@@ -27,7 +27,7 @@ for a in alph1:
       driver.find_element_by_name("appData:searchform:jspsearchpage:submitSearch").click()
       page = driver.page_source
       soup = BeautifulSoup(page)
-      outfile = open("scrape/" + str(first) + "_" + str(last) + ".txt", "w")
+      outfile = open("scrape/" + str(c) + "_" + str(a) + str(b) + ".txt", "w")
       print >> outfile, soup.prettify()
       print >> compile_file, str(last) + "," + str(first)
       print "Found cases for " + str(last) + ", " + str(first)
