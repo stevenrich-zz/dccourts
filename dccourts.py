@@ -29,6 +29,6 @@ for a in alph1:
       soup = BeautifulSoup(page)
       outfile = open("scrape/" + str(c) + "_" + str(a) + str(b) + ".txt", "w")
       print >> outfile, soup.prettify()
-      print >> compile_file, str(last) + "," + str(first)
-      print "Found cases for " + str(last) + ", " + str(first)
+      print >> compile_file, str(a) + str(b) + "," + str(first)
+      print "Found cases for " + str(a) + str(b) + ", " + str(first)
       driver.quit()
