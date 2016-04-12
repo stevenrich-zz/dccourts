@@ -39,3 +39,6 @@ for a in alph1:
 
 #eliminate duplicate cases
 
+#pull case files
+
+
