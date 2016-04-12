@@ -36,3 +36,6 @@ for a in alph1:
       driver.quit()
 
 #pull pages
+
+#eliminate duplicate cases
+
