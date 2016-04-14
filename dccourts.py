@@ -22,6 +22,7 @@ for a in alph1:
     for c in alph3:
       driver = webdriver.Firefox()
       driver.get("https://www.dccourts.gov/cco/maincase.jsf")
+      driver.execute_script("return oamSubmitForm('appData:searchform','appData:searchform:jspsearchpage:nameAttributesPanelToggleCollapsed')")
       element = driver.find_element_by_name("appData:searchform:jspsearchpage:lastName")
       element.send_keys(str(a) + str(b))
       element2 = driver.find_element_by_name("appData:searchform:jspsearchpage:firstName")
