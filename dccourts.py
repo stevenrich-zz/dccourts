@@ -29,9 +29,9 @@ for a in alph1:
       element2 = driver.find_element_by_name("appData:searchform:jspsearchpage:firstName")
       element2.send_keys(str(c))
       element3 = driver.find_element_by_name("appData:searchform:jspsearchpage:jspattributespage:filedFromDate:j_id_id16pc4")
-	element3.send_keys(str("01/01/2007"))
-	element4 = driver.find_element_by_name("appData:searchform:jspsearchpage:jspattributespage:filedToDate:j_id_id19pc4")
-	element4.send_keys(str("12/31/2015"))
+      element3.send_keys(str("01/01/2007"))
+      element4 = driver.find_element_by_name("appData:searchform:jspsearchpage:jspattributespage:filedToDate:j_id_id19pc4")
+      element4.send_keys(str("12/31/2015"))
       driver.find_element_by_name("appData:searchform:jspsearchpage:submitSearch").click()
       page = driver.page_source
       soup = BeautifulSoup(page)
