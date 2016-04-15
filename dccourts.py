@@ -29,7 +29,7 @@ for a in alph1:
       element2 = driver.find_element_by_name("appData:searchform:jspsearchpage:firstName")
       element2.send_keys(str(c))
       #add date field searches 
-     driver.find_element_by_name("appData:searchform:jspsearchpage:submitSearch").click()
+      driver.find_element_by_name("appData:searchform:jspsearchpage:submitSearch").click()
       page = driver.page_source
       soup = BeautifulSoup(page)
       outfile = open("scrape/" + str(c) + "_" + str(a) + str(b) + ".txt", "w")
