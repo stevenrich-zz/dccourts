@@ -5,6 +5,7 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 from pyvirtualdisplay import Display
 import csv
+import numpy
 
 print "Scraping DC Superior Court site..."
 
