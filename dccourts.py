@@ -43,6 +43,8 @@ for a in alph1:
 
 #pull pages
 
+#pull case details
+
 #eliminate duplicate cases
 
 #pull case files
