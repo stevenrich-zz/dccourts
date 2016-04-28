@@ -40,7 +40,7 @@ for a in alph1:
       print >> compile_file, str(a) + str(b) + "," + str(c)
       print "Found cases for " + str(a) + str(b) + ", " + str(c)
       driver.quit()
-time.sleep(3)
+      time.sleep(3)
 
 #pull pages
 
