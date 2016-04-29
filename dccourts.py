@@ -51,3 +51,5 @@ for a in alph1:
 #pull case files
 
 #parse case files
+
+#add date change capability
